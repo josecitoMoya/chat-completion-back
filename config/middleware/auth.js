@@ -2,7 +2,7 @@ import { validateToken } from "../token/tokens.js";
 
 export const validateUser = (req, res, next) => {
   try {
-    const token = req.cookies.gptToken;
+    const token = req.cookies;
 
     console.log("SOY COOKIE PARSER", token);
 
