@@ -1,7 +1,6 @@
 import OpenAI from "openai";
-import "dotenv/config";
 
-const { GPT_API_KEY, GPT_ORGANIZATION } = process.env;
+import { GPT_API_KEY, GPT_ORGANIZATION } from "../enviroment";
 
 const openai = new OpenAI({
   apiKey: GPT_API_KEY,

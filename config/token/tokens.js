@@ -1,7 +1,6 @@
 import jwt from "jsonwebtoken";
-import "dotenv/config";
 
-const { JWT_SECRET, JWT_EXPIRATION } = process.env;
+import { JWT_SECRET, JWT_EXPIRATION } from "../enviroment/index.js";
 
 export const generateToken = (userData) => {
   const { name, email } = userData;
