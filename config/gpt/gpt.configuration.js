@@ -1,6 +1,6 @@
 import OpenAI from "openai";
 
-import { GPT_API_KEY, GPT_ORGANIZATION } from "../enviroment";
+import { GPT_API_KEY, GPT_ORGANIZATION } from "../enviroment/index.js";
 
 const openai = new OpenAI({
   apiKey: GPT_API_KEY,
