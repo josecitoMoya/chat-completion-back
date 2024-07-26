@@ -45,7 +45,11 @@ export const userLogin = async (req, res) => {
       email: user.email,
     };
 
-    res.cookie("gptToken", token).send(response);
+    res
+      .cookie("gptToken", token, {
+        secure: true,
+      })
+      .send(response);
   } catch (error) {
     console.error(error);
   }
