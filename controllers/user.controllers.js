@@ -48,6 +48,8 @@ export const userLogin = async (req, res) => {
     res
       .cookie("gptToken", token, {
         secure: true,
+        httpOnly: true,
+        sameSite: "none",
       })
       .send(response);
   } catch (error) {
