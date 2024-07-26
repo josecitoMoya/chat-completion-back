@@ -1,7 +1,8 @@
 import mongoose from "mongoose";
 
-const mongoConnection =
-  "mongodb+srv://miTurnoWebApp:challenge@challenge.0ziosfz.mongodb.net/?retryWrites=true&w=majority&appName=challenge";
+import { DB_URL } from "../config/enviroment/index.js";
+
+const mongoConnection = DB_URL;
 
 const connectionDB = async () => {
   try {
